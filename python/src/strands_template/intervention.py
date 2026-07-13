@@ -28,6 +28,8 @@ class TemplateIntervention(InterventionHandler):
 
     name = "template-intervention"
 
+    # Override any lifecycle methods you need — not just before_tool_call.
+
     def before_tool_call(self, event: BeforeToolCallEvent, **kwargs: Any) -> Proceed | Deny:
         """Called before a tool is executed.
 

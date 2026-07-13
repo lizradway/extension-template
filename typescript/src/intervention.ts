@@ -25,6 +25,8 @@ import {
 export class TemplateIntervention extends InterventionHandler {
   readonly name = 'template-intervention'
 
+  // Override any lifecycle methods you need — not just beforeToolCall.
+
   override beforeToolCall(_event: BeforeToolCallEvent): Proceed | Deny {
     // TODO: Implement your intervention logic.
     return InterventionActions.proceed()
